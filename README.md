@@ -3,7 +3,7 @@ Mindcoin
 
 What is Mindcoin?
 
-Mindcoin is a clone of Litecoin I made as part of a Youtube series documenting the process. 
+Mindcoin - a lite version of Mindcoin optimized for CPU mining using scrypt as a proof of work scheme.
 
 Mindcoin properties:
 

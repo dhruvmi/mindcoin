@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Funcoin</source>
-        <translation>Om Funcoin</translation>
+        <source>About Mindcoin</source>
+        <translation>Om Mindcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Funcoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Funcoin&lt;/b&gt;-version</translation>
+        <source>&lt;b&gt;Mindcoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Mindcoin&lt;/b&gt;-version</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -35,8 +35,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+0"/>
-        <source>The Funcoin developers</source>
-        <translation>Funcoin-utvecklarna</translation>
+        <source>The Mindcoin developers</source>
+        <translation>Mindcoin-utvecklarna</translation>
     </message>
 </context>
 <context>
@@ -68,8 +68,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Funcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Detta är dina Funcoin-adresser för att ta emot betalningar.  Du kan ge varje avsändare en egen adress så att du kan hålla reda på vem som betalar dig.</translation>
+        <source>These are your Mindcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Detta är dina Mindcoin-adresser för att ta emot betalningar.  Du kan ge varje avsändare en egen adress så att du kan hålla reda på vem som betalar dig.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -83,7 +83,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Funcoin address</source>
+        <source>Sign a message to prove you own a Mindcoin address</source>
         <translation>Signera ett meddelande för att bevisa att du äger denna adress</translation>
     </message>
     <message>
@@ -108,8 +108,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Funcoin address</source>
-        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den specificerade Funcoin-adressen</translation>
+        <source>Verify a message to ensure it was signed with a specified Mindcoin address</source>
+        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den specificerade Mindcoin-adressen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -123,8 +123,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Funcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Detta är dina Funcoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Funcoins.</translation>
+        <source>These are your Mindcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Detta är dina Mindcoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Mindcoins.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -139,7 +139,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <location line="+1"/>
         <source>Send &amp;Coins</source>
-        <translation>Skicka &amp;Funcoins</translation>
+        <translation>Skicka &amp;Mindcoins</translation>
     </message>
     <message>
         <location line="+260"/>
@@ -249,7 +249,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FUNCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MINDCOINS&lt;/b&gt;!</source>
         <translation>VARNING: Om du krypterar din plånbok och glömmer ditt lösenord, kommer du att &lt;b&gt;FÖRLORA ALLA DINA TILLGÅNGAR&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -276,7 +276,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-56"/>
-        <source>Funcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your funcoins from being stolen by malware infecting your computer.</source>
+        <source>Mindcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your mindcoins from being stolen by malware infecting your computer.</source>
         <translation>Programmet kommer nu att stänga ner för att färdigställa krypteringen. Tänk på att en krypterad plånbok inte skyddar mot stöld om din dator är infekterad med en keylogger.</translation>
     </message>
     <message>
@@ -375,8 +375,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Funcoin</source>
-        <translation>Visa information om Funcoin</translation>
+        <source>Show information about Mindcoin</source>
+        <translation>Visa information om Mindcoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -420,13 +420,13 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Funcoin address</source>
-        <translation>Skicka mynt till en Funcoin-adress</translation>
+        <source>Send coins to a Mindcoin address</source>
+        <translation>Skicka mynt till en Mindcoin-adress</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Funcoin</source>
-        <translation>Ändra konfigurationsalternativ för Funcoin</translation>
+        <source>Modify configuration options for Mindcoin</source>
+        <translation>Ändra konfigurationsalternativ för Mindcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -456,8 +456,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Funcoin</source>
-        <translation>Funcoin</translation>
+        <source>Mindcoin</source>
+        <translation>Mindcoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -481,8 +481,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Funcoin</source>
-        <translation>&amp;Om Funcoin</translation>
+        <source>&amp;About Mindcoin</source>
+        <translation>&amp;Om Mindcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -501,13 +501,13 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Funcoin addresses to prove you own them</source>
-        <translation>Signera meddelanden med din Funcoinadress för att bevisa att du äger dem</translation>
+        <source>Sign messages with your Mindcoin addresses to prove you own them</source>
+        <translation>Signera meddelanden med din Mindcoinadress för att bevisa att du äger dem</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Funcoin addresses</source>
-        <translation>Verifiera meddelanden för att vara säker på att de var signerade med den specificerade Funcoin-adressen</translation>
+        <source>Verify messages to ensure they were signed with specified Mindcoin addresses</source>
+        <translation>Verifiera meddelanden för att vara säker på att de var signerade med den specificerade Mindcoin-adressen</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -537,13 +537,13 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+47"/>
-        <source>Funcoin client</source>
-        <translation>Funcoin-klient</translation>
+        <source>Mindcoin client</source>
+        <translation>Mindcoin-klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Funcoin network</source>
-        <translation><numerusform>%n aktiv anslutning till Funcoin-nätverket</numerusform><numerusform>%n aktiva anslutningar till Funcoin-nätverket</numerusform></translation>
+        <source>%n active connection(s) to Mindcoin network</source>
+        <translation><numerusform>%n aktiv anslutning till Mindcoin-nätverket</numerusform><numerusform>%n aktiva anslutningar till Mindcoin-nätverket</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -657,8 +657,8 @@ Adress: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Funcoin address or malformed URI parameters.</source>
-        <translation>URI går inte att tolkas! Detta kan orsakas av en ogiltig Funcoin-adress eller felaktiga URI parametrar.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Mindcoin address or malformed URI parameters.</source>
+        <translation>URI går inte att tolkas! Detta kan orsakas av en ogiltig Mindcoin-adress eller felaktiga URI parametrar.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -672,8 +672,8 @@ Adress: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Funcoin can no longer continue safely and will quit.</source>
-        <translation>Ett allvarligt fel har uppstått. Funcoin kan inte längre köras säkert och kommer att avslutas.</translation>
+        <source>A fatal error occurred. Mindcoin can no longer continue safely and will quit.</source>
+        <translation>Ett allvarligt fel har uppstått. Mindcoin kan inte längre köras säkert och kommer att avslutas.</translation>
     </message>
 </context>
 <context>
@@ -738,8 +738,8 @@ Adress: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Funcoin address.</source>
-        <translation>Den angivna adressen &quot;%1&quot; är inte en giltig Funcoin-adress.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Mindcoin address.</source>
+        <translation>Den angivna adressen &quot;%1&quot; är inte en giltig Mindcoin-adress.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -757,8 +757,8 @@ Adress: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Funcoin-Qt</source>
-        <translation>Funcoin-Qt</translation>
+        <source>Mindcoin-Qt</source>
+        <translation>Mindcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -820,13 +820,13 @@ Adress: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Funcoin after logging in to the system.</source>
-        <translation>Starta Funcoin automatiskt efter inloggning.</translation>
+        <source>Automatically start Mindcoin after logging in to the system.</source>
+        <translation>Starta Mindcoin automatiskt efter inloggning.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Funcoin on system login</source>
-        <translation>&amp;Starta Funcoin vid systemstart</translation>
+        <source>&amp;Start Mindcoin on system login</source>
+        <translation>&amp;Starta Mindcoin vid systemstart</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -845,8 +845,8 @@ Adress: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Funcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna automatiskt Funcoin-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
+        <source>Automatically open the Mindcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt Mindcoin-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -855,8 +855,8 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Funcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Anslut till Funcoin-nätverket genom en SOCKS-proxy (t.ex. när du ansluter genom Tor).</translation>
+        <source>Connect to the Mindcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Anslut till Mindcoin-nätverket genom en SOCKS-proxy (t.ex. när du ansluter genom Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -930,8 +930,8 @@ Adress: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Funcoin.</source>
-        <translation>Användargränssnittets språk kan ställas in här. Denna inställning träder i kraft efter en omstart av Funcoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Mindcoin.</source>
+        <translation>Användargränssnittets språk kan ställas in här. Denna inställning träder i kraft efter en omstart av Mindcoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -945,8 +945,8 @@ Adress: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Funcoin addresses in the transaction list or not.</source>
-        <translation>Anger om Funcoin-adresser skall visas i transaktionslistan.</translation>
+        <source>Whether to show Mindcoin addresses in the transaction list or not.</source>
+        <translation>Anger om Mindcoin-adresser skall visas i transaktionslistan.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -997,8 +997,8 @@ Adress: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Funcoin.</source>
-        <translation>Denna inställning träder i kraft efter en omstart av Funcoin.</translation>
+        <source>This setting will take effect after restarting Mindcoin.</source>
+        <translation>Denna inställning träder i kraft efter en omstart av Mindcoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1016,8 +1016,8 @@ Adress: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Funcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med Funcoin-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Mindcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med Mindcoin-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1070,8 +1070,8 @@ Adress: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start funcoin: click-to-pay handler</source>
-        <translation>Kan inte starta funcoin: klicka-och-betala handhavare</translation>
+        <source>Cannot start mindcoin: click-to-pay handler</source>
+        <translation>Kan inte starta mindcoin: klicka-och-betala handhavare</translation>
     </message>
 </context>
 <context>
@@ -1220,8 +1220,8 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Funcoin-Qt help message to get a list with possible Funcoin command-line options.</source>
-        <translation>Visa Funcoin-Qt hjälpmeddelande för att få en lista med möjliga Funcoin kommandoradsalternativ.</translation>
+        <source>Show the Mindcoin-Qt help message to get a list with possible Mindcoin command-line options.</source>
+        <translation>Visa Mindcoin-Qt hjälpmeddelande för att få en lista med möjliga Mindcoin kommandoradsalternativ.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1240,13 +1240,13 @@ Adress: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Funcoin - Debug window</source>
-        <translation>Funcoin - Debug fönster</translation>
+        <source>Mindcoin - Debug window</source>
+        <translation>Mindcoin - Debug fönster</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Funcoin Core</source>
-        <translation>Funcoin Kärna</translation>
+        <source>Mindcoin Core</source>
+        <translation>Mindcoin Kärna</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1255,8 +1255,8 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Funcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna Funcoin debug-loggfilen som finns i datakatalogen. Detta kan ta några sekunder för stora loggfiler.</translation>
+        <source>Open the Mindcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna Mindcoin debug-loggfilen som finns i datakatalogen. Detta kan ta några sekunder för stora loggfiler.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1265,8 +1265,8 @@ Adress: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Funcoin RPC console.</source>
-        <translation>Välkommen till Funcoin RPC-konsollen.</translation>
+        <source>Welcome to the Mindcoin RPC console.</source>
+        <translation>Välkommen till Mindcoin RPC-konsollen.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1449,8 +1449,8 @@ Adress: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Funcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Ange en Funcoin-adress (t.ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a Mindcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Ange en Mindcoin-adress (t.ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
 <context>
@@ -1514,7 +1514,7 @@ Adress: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Funcoin address</source>
+        <source>Sign the message to prove you own this Mindcoin address</source>
         <translation>Signera meddelandet för att bevisa att du äger denna adress</translation>
     </message>
     <message>
@@ -1550,8 +1550,8 @@ Adress: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Funcoin address</source>
-        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivna Funcoin-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified Mindcoin address</source>
+        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivna Mindcoin-adressen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1566,8 +1566,8 @@ Adress: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Funcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Ange en Funcoin-adress (t.ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a Mindcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Ange en Mindcoin-adress (t.ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1576,8 +1576,8 @@ Adress: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Funcoin signature</source>
-        <translation>Ange Funcoin-signatur</translation>
+        <source>Enter Mindcoin signature</source>
+        <translation>Ange Mindcoin-signatur</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1650,8 +1650,8 @@ Adress: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Funcoin developers</source>
-        <translation>Funcoin-utvecklarna</translation>
+        <source>The Mindcoin developers</source>
+        <translation>Mindcoin-utvecklarna</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2188,8 +2188,8 @@ Adress: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Funcoin version</source>
-        <translation>Funcoin version</translation>
+        <source>Mindcoin version</source>
+        <translation>Mindcoin version</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2198,8 +2198,8 @@ Adress: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or funcoind</source>
-        <translation>Skicka kommando till -server eller funcoind</translation>
+        <source>Send command to -server or mindcoind</source>
+        <translation>Skicka kommando till -server eller mindcoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2218,13 +2218,13 @@ Adress: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: funcoin.conf)</source>
-        <translation>Ange konfigurationsfil (förvalt: funcoin.conf)</translation>
+        <source>Specify configuration file (default: mindcoin.conf)</source>
+        <translation>Ange konfigurationsfil (förvalt: mindcoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: funcoind.pid)</source>
-        <translation>Ange pid fil (förvalt: funcoind.pid)</translation>
+        <source>Specify pid file (default: mindcoind.pid)</source>
+        <translation>Ange pid fil (förvalt: mindcoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2301,24 +2301,24 @@ Adress: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=funcoinrpc
+rpcuser=mindcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Funcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Mindcoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, du behöver sätta ett rpclösensord i konfigurationsfilen:
 %s
 Det är rekommenderat att använda följande slumpade lösenord:
-rpcuser=funcoinrpc
+rpcuser=mindcoinrpc
 rpcpassword=%s
 (du behöver inte komma ihåg lösenordet)
 Användarnamnet och lösenordet FÅR INTE bara detsamma.
 Om filen inte existerar, skapa den med enbart ägarläsbara filrättigheter.
 Det är också rekommenderat att sätta alertnotify så du meddelas om problem;
-till exempel: alertnotify=echo %%s | mail -s &quot;Funcoin Alert&quot; admin@foo.com
+till exempel: alertnotify=echo %%s | mail -s &quot;Mindcoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2333,8 +2333,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Funcoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Funcoin is probably already running.</source>
-        <translation>Kan inte låsa data-mappen %s. Funcoin körs förmodligen redan.</translation>
+        <source>Cannot obtain a lock on data directory %s. Mindcoin is probably already running.</source>
+        <translation>Kan inte låsa data-mappen %s. Mindcoin körs förmodligen redan.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2344,7 +2344,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Funcoin Alert&quot; admin@foo
     <message>
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fel: Denna transaktion kräver en transaktionsavgift på minst %s på grund av dess storlek, komplexitet, eller användning av senast mottagna funcoins!</translation>
+        <translation>Fel: Denna transaktion kräver en transaktionsavgift på minst %s på grund av dess storlek, komplexitet, eller användning av senast mottagna mindcoins!</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2378,8 +2378,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Funcoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Funcoin will not work properly.</source>
-        <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer Funcoin inte fungera korrekt.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Mindcoin will not work properly.</source>
+        <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer Mindcoin inte fungera korrekt.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2628,8 +2628,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Funcoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Funcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL-inställningar: (se Funcoin-wikin för SSL-setup instruktioner)</translation>
+        <source>SSL options: (see the Mindcoin Wiki for SSL setup instructions)</source>
+        <translation>SSL-inställningar: (se Mindcoin-wikin för SSL-setup instruktioner)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2818,13 +2818,13 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Funcoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Funcoin</source>
-        <translation>Fel vid inläsningen av wallet.dat: Plånboken kräver en senare version av Funcoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Mindcoin</source>
+        <translation>Fel vid inläsningen av wallet.dat: Plånboken kräver en senare version av Mindcoin</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Funcoin to complete</source>
-        <translation>Plånboken behöver skrivas om: Starta om Funcoin för att färdigställa</translation>
+        <source>Wallet needed to be rewritten: restart Mindcoin to complete</source>
+        <translation>Plånboken behöver skrivas om: Starta om Mindcoin för att färdigställa</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2869,7 +2869,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Funcoin Alert&quot; admin@foo
     <message>
         <location line="-6"/>
         <source>Insufficient funds</source>
-        <translation>Otillräckligt med funcoins</translation>
+        <translation>Otillräckligt med mindcoins</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2883,8 +2883,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Funcoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Funcoin is probably already running.</source>
-        <translation>Det går inte att binda till %s på den här datorn. Funcoin är förmodligen redan igång.</translation>
+        <source>Unable to bind to %s on this computer. Mindcoin is probably already running.</source>
+        <translation>Det går inte att binda till %s på den här datorn. Mindcoin är förmodligen redan igång.</translation>
     </message>
     <message>
         <location line="+64"/>

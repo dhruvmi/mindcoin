@@ -1,9 +1,9 @@
-Building Funcoin
+Building Mindcoin
 
-See doc/readme-qt.rst for instructions on building Funcoin-Qt,
+See doc/readme-qt.rst for instructions on building Mindcoin-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Funcoin.
+implementation of Mindcoin.
 
-See doc/build-*.txt for instructions on building funcoind,
+See doc/build-*.txt for instructions on building mindcoind,
 the intended-for-services, no-graphical-interface, reference
-implementation of Funcoin.
+implementation of Mindcoin.

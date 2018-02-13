@@ -19,7 +19,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Funcoin cannot be compiled without assertions."
+# error "Mindcoin cannot be compiled without assertions."
 #endif
 
 //
@@ -35,8 +35,8 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0xe7e59fbb31c56d70a65700857a9744abdaa35a0b459efb254eaa42c8faa3f323");
-static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Funcoin: starting difficulty is 1 / 2^12
+uint256 hashGenesisBlock("0x6b40421a1b4f1101d5b147f350b691498770e3631bcc3dafdb518130510f5f61");
+static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Mindcoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 uint256 nBestChainWork = 0;
@@ -68,7 +68,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Funcoin Signed Message:\n";
+const string strMessageMagic = "Mindcoin Signed Message:\n";
 
 double dHashesPerSec = 0.0;
 int64 nHPSTimerStart = 0;
@@ -362,7 +362,7 @@ unsigned int LimitOrphanTxSize(unsigned int nMaxOrphans)
 
 bool CTxOut::IsDust() const
 {
-    // Funcoin: IsDust() detection disabled, allows any valid dust to be relayed.
+    // Mindcoin: IsDust() detection disabled, allows any valid dust to be relayed.
     // The fees imposed on each dust txo is considered sufficient spam deterrant. 
     return false;
 }
@@ -623,7 +623,7 @@ int64 CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
             nMinFee = 0;
     }
 
-    // Funcoin
+    // Mindcoin
     // To limit dust spam, add nBaseFee for each output less than DUST_SOFT_LIMIT
     BOOST_FOREACH(const CTxOut& txout, vout)
         if (txout.nValue < DUST_SOFT_LIMIT)
@@ -1089,14 +1089,14 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 {
     int64 nSubsidy = 20 * COIN;
 
-    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 10000); // Funcoin: 840k blocks in ~4 years
+    // Subsidy is cut in half every 10000 blocks, which will occur approximately every 4 years
+    nSubsidy >>= (nHeight / 10000); // Mindcoin: 840k blocks in ~4 years
 
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // Funcoin: 3.5 days
-static const int64 nTargetSpacing = 5 * 60; // Funcoin: 2.5 minutes
+static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // Mindcoin: 3.5 days
+static const int64 nTargetSpacing = 5 * 60; // Mindcoin: 2.5 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -1155,7 +1155,7 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
         return pindexLast->nBits;
     }
 
-    // Funcoin: This fixes an issue where a 51% attack can change difficulty at will.
+    // Mindcoin: This fixes an issue where a 51% attack can change difficulty at will.
     // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
     int blockstogoback = nInterval-1;
     if ((pindexLast->nHeight+1) != nInterval)
@@ -2102,7 +2102,7 @@ bool CBlock::CheckBlock(CValidationState &state, bool fCheckPOW, bool fCheckMerk
     if (vtx.empty() || vtx.size() > MAX_BLOCK_SIZE || ::GetSerializeSize(*this, SER_NETWORK, PROTOCOL_VERSION) > MAX_BLOCK_SIZE)
         return state.DoS(100, error("CheckBlock() : size limits failed"));
 
-    // Funcoin: Special short-term limits to avoid 10,000 BDB lock limit:
+    // Mindcoin: Special short-term limits to avoid 10,000 BDB lock limit:
     if (GetBlockTime() < 1376568000)  // stop enforcing 15 August 2013 00:00:00
     {
         // Rule is: #unique txids referenced <= 4,500
@@ -2744,9 +2744,9 @@ bool LoadBlockIndex()
     {
         pchMessageStart[0] = 0xf1;
         pchMessageStart[1] = 0xc2;
-        pchMessageStart[2] = 0xb6;
-        pchMessageStart[3] = 0xd2;
-        hashGenesisBlock = uint256("0xe38de54581f17c6fab4b0f147e5318c34de2eb090473f36d1d7f424df1e12e94");
+        pchMessageStart[2] = 0xb7;
+        pchMessageStart[3] = 0xdc;
+        hashGenesisBlock = uint256("0x115054e636e97d023bab431acd3dd232114f2d8cdfd164a596949ecebab2dd56");
     }
 
     //
@@ -2779,77 +2779,78 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "Doug Jones defeats Roy Moore in Alabama senate election";
+        const char* pszTimestamp = "This is mindinventory's first cryptocurrency";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 20 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04c51ea81fcb28278f0346c9361703a67401d2819ed3cbcc9f971f941976bdbe48968ef979f09f1e5aafaf33aab9071fea7b99cbcdafb28a7b477f881d899b13af") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04fce580414814a5ad85ed63980246be8c64261b8a322ffe3e98cfac7be4e6567f2f782c5aedae89dc98227765c5a6228ce79ae8c57e82975831dc25c429c54771") << OP_CHECKSIG;
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1513219446;
+        block.nTime    = 1517815746;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 2085105452;
+        block.nNonce   = 2086320752;
 
         if (fTestNet)
         {
-            block.nTime    = 1513219430;
-            block.nNonce   = 387675336;
+            block.nTime    = 1517815712;
+            block.nNonce   = 386875135;
         }
 
-if (false && block.GetHash() != hashGenesisBlock)
-        {
-            printf("Searching for genesis block...\n");
-            // This will figure out a valid hash and Nonce if you're
-            // creating a different genesis block:
-            uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
-            uint256 thash;
-            char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
 
-            loop
-            {
-#if defined(USE_SSE2)
-                // Detection would work, but in cases where we KNOW it always has SSE2,
-                // it is faster to use directly than to use a function pointer or conditional.
-#if defined(_M_X64) || defined(__x86_64__) || defined(_M_AMD64) || (defined(MAC_OSX) && defined(__i386__))
-                // Always SSE2: x86_64 or Intel MacOS X
-                scrypt_1024_1_1_256_sp_sse2(BEGIN(block.nVersion), BEGIN(thash), scratchpad);
-#else
-                // Detect SSE2: 32bit x86 Linux or Windows
-                scrypt_1024_1_1_256_sp(BEGIN(block.nVersion), BEGIN(thash), scratchpad);
-#endif
-#else
-                // Generic scrypt
-                scrypt_1024_1_1_256_sp_generic(BEGIN(block.nVersion), BEGIN(thash), scratchpad);
-#endif
-                if (thash <= hashTarget)
-                    break;
-                if ((block.nNonce & 0xFFF) == 0)
+        if (false && block.GetHash() != hashGenesisBlock)
                 {
-                    printf("nonce %08X: hash = %s (target = %s)\n", block.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
+                    printf("Searching for genesis block...\n");
+                    // This will figure out a valid hash and Nonce if you're
+                    // creating a different genesis block:
+                    uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
+                    uint256 thash;
+                    char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
+
+                    loop
+                    {
+        #if defined(USE_SSE2)
+                        // Detection would work, but in cases where we KNOW it always has SSE2,
+                        // it is faster to use directly than to use a function pointer or conditional.
+        #if defined(_M_X64) || defined(__x86_64__) || defined(_M_AMD64) || (defined(MAC_OSX) && defined(__i386__))
+                        // Always SSE2: x86_64 or Intel MacOS X
+                        scrypt_1024_1_1_256_sp_sse2(BEGIN(block.nVersion), BEGIN(thash), scratchpad);
+        #else
+                        // Detect SSE2: 32bit x86 Linux or Windows
+                        scrypt_1024_1_1_256_sp(BEGIN(block.nVersion), BEGIN(thash), scratchpad);
+        #endif
+        #else
+                        // Generic scrypt
+                        scrypt_1024_1_1_256_sp_generic(BEGIN(block.nVersion), BEGIN(thash), scratchpad);
+        #endif
+                        if (thash <= hashTarget)
+                            break;
+                        if ((block.nNonce & 0xFFF) == 0)
+                        {
+                            printf("nonce %08X: hash = %s (target = %s)\n", block.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
+                        }
+                        ++block.nNonce;
+                        if (block.nNonce == 0)
+                        {
+                            printf("NONCE WRAPPED, incrementing time\n");
+                            ++block.nTime;
+                        }
+                    }
+                    printf("block.nTime = %u \n", block.nTime);
+                    printf("block.nNonce = %u \n", block.nNonce);
+                    printf("block.GetHash = %s\n", block.GetHash().ToString().c_str());
                 }
-                ++block.nNonce;
-                if (block.nNonce == 0)
-                {
-                    printf("NONCE WRAPPED, incrementing time\n");
-                    ++block.nTime;
-                }
-            }
-            printf("block.nTime = %u \n", block.nTime);
-            printf("block.nNonce = %u \n", block.nNonce);
-            printf("block.GetHash = %s\n", block.GetHash().ToString().c_str());
-        }
 
         //// debug print
         uint256 hash = block.GetHash();
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0xfbed20fa3943533e70a9bed6a78bbc8ec901aa9231125f7ef91cd32198a182ce"));
+        assert(block.hashMerkleRoot == uint256("0x9e9eb3e17267b12bcdfc978713538294bbaeb9dd52b1b2462b4394acdd91620d"));
         block.print();
         assert(hash == hashGenesisBlock);
 
@@ -3122,7 +3123,7 @@ bool static AlreadyHave(const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xfa, 0xc3, 0xba, 0xd3 }; // Funcoin: increase each by adding 2 to bitcoin's value.
+unsigned char pchMessageStart[4] = { 0xfa, 0xc3, 0xba, 0xd3 }; // Mindcoin: increase each by adding 2 to bitcoin's value.
 
 
 void static ProcessGetData(CNode* pfrom)
@@ -4172,7 +4173,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// FuncoinMiner
+// MindcoinMiner
 //
 
 int static FormatHashBlocks(void* pbuffer, unsigned int len)
@@ -4585,7 +4586,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    printf("FuncoinMiner:\n");
+    printf("MindcoinMiner:\n");
     printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
     printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
@@ -4594,7 +4595,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("FuncoinMiner : generated block is stale");
+            return error("MindcoinMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -4608,17 +4609,17 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("FuncoinMiner : ProcessBlock, block not accepted");
+            return error("MindcoinMiner : ProcessBlock, block not accepted");
     }
 
     return true;
 }
 
-void static FuncoinMiner(CWallet *pwallet)
+void static MindcoinMiner(CWallet *pwallet)
 {
-    printf("FuncoinMiner started\n");
+    printf("MindcoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("funcoin-miner");
+    RenameThread("mindcoin-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -4640,7 +4641,7 @@ void static FuncoinMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        printf("Running FuncoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        printf("Running MindcoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -4739,7 +4740,7 @@ void static FuncoinMiner(CWallet *pwallet)
     } }
     catch (boost::thread_interrupted)
     {
-        printf("FuncoinMiner terminated\n");
+        printf("MindcoinMiner terminated\n");
         throw;
     }
 }
@@ -4764,7 +4765,7 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
 
     minerThreads = new boost::thread_group();
     for (int i = 0; i < nThreads; i++)
-        minerThreads->create_thread(boost::bind(&FuncoinMiner, pwallet));
+        minerThreads->create_thread(boost::bind(&MindcoinMiner, pwallet));
 }
 
 // Amount compression:

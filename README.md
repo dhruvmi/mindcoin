@@ -107,6 +107,6 @@ submit new unit tests for old code.
 				addnode= 136.243.40.220
 
 
-$sudo ./InflationCoind
+				$sudo ./mindcoind
 
 

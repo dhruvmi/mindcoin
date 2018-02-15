@@ -84,14 +84,9 @@ submit new unit tests for old code.
 
 
 		$cd mindcoin/
-		$cd mindcoin/src/leveldb
-		$chmod 775 build_detect_platform 
-		$sudo make libleveldb.a libmemenv.a
-		$cd ..
-		$make -f makefile.unix USE_UPNP=1 USE_QRCODE=1 USE_UPNP=1
-		$sudo ./mindcoind 
-		$sudo ./mindcoind -testnet
-
+		$qmake "USE_UPNP=-"
+		$make
+		
 		You will get a message stating there is no configuration file.
 		$sudo gedit ~/.mindcoin/mindcoin.conf
 
@@ -106,8 +101,7 @@ submit new unit tests for old code.
 		addnode= 185.122.58.10
 		addnode= 136.243.40.220
 
-
-		$sudo ./mindcoind
+		$sudo ./mindcoin-qt
         
 
 

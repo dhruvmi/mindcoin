@@ -1,7 +1,7 @@
 Mindcoin integration/staging tree
 ================================
 
-http://www.mindcoin.org
+http://www.mindinventory.com
 
 Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2017-2018 Mindcoin Developers

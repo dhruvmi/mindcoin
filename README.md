@@ -4,7 +4,7 @@ Mindcoin integration/staging tree
 http://www.mindcoin.org
 
 Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 Mindcoin Developers
+Copyright (c) 2017-2018 Mindcoin Developers
 
 What is Mindcoin?
 ----------------
@@ -15,11 +15,11 @@ Mindcoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
  - ~84 million total coins
 
 The rest is the same as Bitcoin.
- - 50 coins per block
- - 2016 blocks to retarget difficulty
+ - 20 coins per block
+ - 2018 blocks to retarget difficulty
 
 For more information, as well as an immediately useable, binary version of
-the Mindcoin client sofware, see http://www.mindcoin.org.
+the Mindcoin client sofware, see http://www.mindinventory.com
 
 License
 -------
@@ -61,13 +61,52 @@ lots of money.
 Developers are strongly encouraged to write unit tests for new code, and to
 submit new unit tests for old code.
 
-Unit tests for the core code are in `src/test/`. To compile and run them:
+				sudo apt-get update
+				$sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
+				$sudo apt-get install libboost-all-dev git npm nodejs nodejs-legacy libminiupnpc-dev redis-server
 
-    cd src; make -f makefile.unix test
+				$sudo apt-get install libdb-dev libqrencode-dev qt4-qmake libqtgui4 libqt4-dev
+				$sudo apt-get install libminiupnpc-dev libminiupnpc8 libboost1.48-all-dev
 
-Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 
-    qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
-    make -f Makefile.test
-    ./mindcoin-qt_test
+				$sudo apt-get install curl ntp unzip libdb++-dev libboost-all-dev libqrencode-dev aptitude && aptitude install miniupnpc
+
+				$sudo add-apt-repository ppa:bitcoin/bitcoin
+				$sudo apt-get update
+				$sudo apt-get install libdb4.8-dev libdb4.8++-dev
+
+				$sudo curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
+				$source ~/.profile
+				$nvm install 0.10.25
+				$nvm use 0.10.25
+
+				$git clone https://github.com/malvikiran/mindcoin.git
+
+
+				$cd mindcoin/
+				$cd mindcoin/src/leveldb
+				$chmod 775 build_detect_platform 
+				$sudo make libleveldb.a libmemenv.a
+				$cd ..
+				$make -f makefile.unix USE_UPNP=1 USE_QRCODE=1 USE_UPNP=1
+				$sudo ./mindcoind 
+				$sudo ./mindcoind -testnet
+
+				You will get a message stating there is no configuration file.
+				$sudo gedit ~/.mindcoin/mindcoin.conf
+
+				rpcuser=youruser
+				rpcpassword=yourpassword
+				rpcallowip=*
+				rpcport=9332
+				daemon=1
+				server=1
+				gen=0
+				addnode= 91.134.120.210
+				addnode= 185.122.58.10
+				addnode= 136.243.40.220
+
+
+$sudo ./InflationCoind
+
 

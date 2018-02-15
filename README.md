@@ -108,5 +108,6 @@ submit new unit tests for old code.
 
 
 	$sudo ./mindcoind
+        
 
 

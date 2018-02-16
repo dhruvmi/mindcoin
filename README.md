@@ -61,7 +61,7 @@ lots of money.
 Please follow below steps to setup GUI wallet in your LINUX system:
 
 		$sudo apt-get update
-		$sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
+		$sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev qttools5-dev-tools
 
 		$sudo add-apt-repository ppa:bitcoin/bitcoin
 		$sudo apt-get update

@@ -68,11 +68,12 @@ submit new unit tests for old code.
 		$sudo apt-get update
 		$sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
-	NODE INSTALLATION
-	*$sudo curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
-	$source ~/.profile
-	$nvm install 0.10.25
-	$nvm use 0.10.25*
+		NODE INSTALLATION
+		------------------
+		$sudo curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
+		$source ~/.profile
+		$nvm install 0.10.25
+		$nvm use 0.10.25
 
 		$git clone https://github.com/malvikiran/mindcoin.git
 		$cd mindcoin/

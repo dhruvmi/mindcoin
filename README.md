@@ -58,8 +58,7 @@ lots of money.
 
 ### Automated Testing
 
-Developers are strongly encouraged to write unit tests for new code, and to
-submit new unit tests for old code.
+Please follow below steps to setup GUI wallet in your LINUX system:
 
 		$sudo apt-get update
 		$sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev

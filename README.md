@@ -63,45 +63,32 @@ submit new unit tests for old code.
 
 		$sudo apt-get update
 		$sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
-		$sudo apt-get install libboost-all-dev git npm nodejs nodejs-legacy libminiupnpc-dev redis-server
-
-		$sudo apt-get install libdb-dev libqrencode-dev qt4-qmake libqtgui4 libqt4-dev
-		$sudo apt-get install libminiupnpc-dev libminiupnpc8 libboost1.48-all-dev
-
-
-		$sudo apt-get install curl ntp unzip libdb++-dev libboost-all-dev libqrencode-dev aptitude && aptitude install miniupnpc
 
 		$sudo add-apt-repository ppa:bitcoin/bitcoin
 		$sudo apt-get update
 		$sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
-		$sudo curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
-		$source ~/.profile
-		$nvm install 0.10.25
-		$nvm use 0.10.25
+	NODE INSTALLATION
+	*$sudo curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
+	$source ~/.profile
+	$nvm install 0.10.25
+	$nvm use 0.10.25*
 
 		$git clone https://github.com/malvikiran/mindcoin.git
-
-
 		$cd mindcoin/
 		$qmake "USE_UPNP=-"
 		$make
-		
+	
 		You will get a message stating there is no configuration file.
 		$sudo gedit ~/.mindcoin/mindcoin.conf
 
 		rpcuser=youruser
 		rpcpassword=yourpassword
 		rpcallowip=*
-		rpcport=9332
 		daemon=1
 		server=1
-		gen=0
-		addnode= 91.134.120.210
-		addnode= 185.122.58.10
-		addnode= 136.243.40.220
 
-		$sudo ./mindcoin-qt
-        
+		$sudo ./mindcoin-qt // live mode
+       		$sudo ./mindcoin-qt -testnet //for testmode
 
 

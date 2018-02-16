@@ -90,7 +90,7 @@ submit new unit tests for old code.
 		server=1
 
 		$sudo ./mindcoin-qt // live mode
-		
-       		$sudo ./mindcoin-qt -testnet //for testmode
+
+		$sudo ./mindcoin-qt -testnet //for testmode
 
 

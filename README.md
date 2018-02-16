@@ -85,9 +85,10 @@ submit new unit tests for old code.
 
 		rpcuser=youruser
 		rpcpassword=yourpassword
-		rpcallowip=*
 		daemon=1
 		server=1
+		connect=192.168.1.21
+		listen=1
 
 		$sudo ./mindcoin-qt // live mode
 
